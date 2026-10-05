@@ -8,7 +8,7 @@ Aplikasi web kasir sederhana untuk kantin atau toko kampus, dibuat sebagai tugas
 
 | Keterangan | Isi |
 |---|---|
-| Nama Lengkap | [Nama Lengkap] |
+| Nama Lengkap | Adelia Eva Ananta |
 | NIM | 124140123 |
 | Kelas Praktikum | [Kelas Praktikum] |
 
@@ -44,17 +44,27 @@ Antarmuka memakai gaya *glassmorphism*: kartu semi-transparan dengan efek blur d
 
 ```
 pemrograman_web_itera_124140123/
-└── [nama]_124140123_pertemuan1/
+└── adeliaevaananta_124140123_pertemuan1/
     ├── index.html
     ├── style.css
     ├── script.js
     ├── README.md
-    ├── screenshots/
-    │   ├── form.png
-    │   ├── error.png
-    │   └── hasil.png
+    ├── Screenshoot/
+    │   ├── Tampilan Awal.png
+    │   ├── Error 1.png
+    │   ├── Eror 2.png
+    │   ├── Tampilan Keranjang.png
+    │   └── Tampilan Transaksi.png
     └── modul/
-        └── (file latihan praktikum)
+        ├── latihan1.html
+        ├── latihan1.js
+        ├── latihan2.html
+        ├── latihan2.js
+        ├── latihan3.html
+        ├── latihan3.js
+        ├── latihan4.html
+        ├── latihan4.css
+        └── latihan4.js
 ```
 
 ---
@@ -63,9 +73,9 @@ pemrograman_web_itera_124140123/
 
 1. Clone repository:
 ```
-   git clone https://github.com/[username]/pemrograman_web_itera_124140123.git
+   git clone https://github.com/adelia124140123/pemrograman_web_itera_124140123.git
 ```
-2. Buka folder `[nama]_124140123_pertemuan1` di Visual Studio Code.
+2. Buka folder `adeliaevaananta_124140123_pertemuan1` di Visual Studio Code.
 3. Pasang ekstensi **Live Server** (oleh Ritwick Dey) melalui menu Extensions, jika belum terpasang.
 4. Klik kanan pada file `index.html`, lalu pilih **Open with Live Server**.
 5. Aplikasi akan terbuka otomatis di browser, biasanya pada alamat `http://127.0.0.1:5500/index.html`.
@@ -116,13 +126,17 @@ pemrograman_web_itera_124140123/
 ## 6. Tangkapan Layar (Screenshot)
 
 ### 6.1 Tampilan Form Input Utama
-![Tampilan Form Input](screenshots/form.png)
+![Tampilan Form Input](Screenshoot/Tampilan%20Awal.png)
 
 ### 6.2 Tampilan Saat Validasi Error Muncul
-![Tampilan Validasi Error](screenshots/error.png)
+![Tampilan Validasi Error 1](Screenshoot/Error%201.png)
+
+![Tampilan Validasi Error 2](Screenshoot/Eror%202.png)
 
 ### 6.3 Tampilan Hasil Perhitungan Kalkulator dan Tabel Keranjang
-![Tampilan Hasil Perhitungan](screenshots/hasil.png)
+![Tampilan Tabel Keranjang](Screenshoot/Tampilan%20Keranjang.png)
+
+![Tampilan Hasil Transaksi](Screenshoot/Tampilan%20Transaksi.png)
 
 ---
 
@@ -149,9 +163,7 @@ Perhitungan dilakukan oleh beberapa fungsi kecil yang masing-masing punya satu t
 
 Diskon karena total belanja dan diskon karena kode promo tidak ditumpuk, sehingga diskon maksimal 10%. Jika uang bayar kurang dari total akhir, aplikasi menampilkan keterangan "Uang belum mencukupi". Setiap kali kasir mengetik di kolom kode promo atau uang bayar, perhitungan dijalankan ulang secara langsung lewat event `input`.
 
-Nilai aturan bisnis (harga minimal, minimal belanja diskon, persen diskon, kode promo) disimpan sebagai konstanta di bagian atas `script.js`, sehingga mudah diubah tanpa menyentuh logika fungsi.
-
-Angka ditampilkan dalam format Rupiah dengan `toLocaleString("id-ID")`.
+Nilai aturan bisnis (harga minimal, minimal belanja diskon, persen diskon, kode promo) disimpan sebagai konstanta di bagian atas `script.js`, sehingga mudah diubah tanpa menyentuh logika fungsi. Angka ditampilkan dalam format Rupiah dengan `toLocaleString("id-ID")`.
 
 ### 7.3 Mekanisme Serialisasi localStorage
 `localStorage` hanya dapat menyimpan data bertipe string, sedangkan keranjang berupa array berisi objek. Karena itu dilakukan serialisasi:
@@ -174,9 +186,11 @@ Penyimpanan dilakukan setiap kali keranjang berubah (menambah barang, menghapus 
 
 ## 8. Folder `modul/`
 
-Folder `modul/` berisi file latihan yang dikerjakan selama mengikuti materi praktikum Pertemuan 1.
+Folder `modul/` berisi file latihan yang dikerjakan selama mengikuti materi praktikum Pertemuan 1. Setiap latihan dijalankan dengan membuka file HTML-nya lewat Live Server.
 
 | File | Keterangan |
 |---|---|
-| [nama-file-latihan-1] | [keterangan singkat] |
-| [nama-file-latihan-2] | [keterangan singkat] |
+| `latihan1.html`, `latihan1.js` | Variabel (`const`/`let`), percabangan `if-else`, `switch-case`, dan ternary operator (kelulusan, kategori umur, konversi hari, grade nilai) |
+| `latihan2.html`, `latihan2.js` | Perulangan dan fungsi: tabel perkalian, faktorial, bilangan prima, kalkulator BMI dengan event handler, dan FizzBuzz |
+| `latihan3.html`, `latihan3.js` | Array of object dan method array (`reduce`, `filter`, `sort`, `find`), serta CRUD data mahasiswa |
+| `latihan4.html`, `latihan4.css`, `latihan4.js` | Form dengan validasi, `localStorage`, `fetch` API dengan search dan pagination, dark mode, dan todo list |
