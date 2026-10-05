@@ -10,7 +10,7 @@ Aplikasi web kasir sederhana untuk kantin atau toko kampus, dibuat sebagai tugas
 |---|---|
 | Nama Lengkap | Adelia Eva Ananta |
 | NIM | 124140123 |
-| Kelas Praktikum | [Kelas Praktikum] |
+| Kelas Praktikum | RC |
 
 ---
 
