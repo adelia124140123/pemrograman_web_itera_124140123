@@ -1,4 +1,4 @@
-/* ===== Design tokens ===== */
+/*Desain token*/
 :root {
   --bg-start: #e0f2fe;
   --bg-mid: #ccfbf1;
@@ -34,7 +34,7 @@
   --transition: 200ms cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* ===== Reset & base ===== */
+/*Reset & base*/
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
@@ -49,7 +49,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ===== Orb latar ===== */
+/*Orb latar*/
 .ambient-canvas {
   position: fixed;
   inset: 0;
@@ -77,9 +77,9 @@ body {
 
 .app-wrapper { max-width: 1200px; margin: 0 auto; position: relative; z-index: 1; }
 
-/* ===== Kartu kaca ===== */
+/*Kartu kaca*/
 .glass-card {
-  /* fallback untuk browser tanpa backdrop-filter */
+  /*fallback untuk browser tanpa backdrop-filter*/
   background: rgba(255, 255, 255, 0.88);
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-lg);
@@ -94,7 +94,7 @@ body {
   }
 }
 
-/* ===== Header ===== */
+/*Header*/
 .app-header {
   display: flex;
   align-items: center;
@@ -151,7 +151,7 @@ body {
   100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
 }
 
-/* ===== Layout ===== */
+/*Layout*/
 .pos-layout {
   display: grid;
   grid-template-columns: 360px 1fr;
@@ -160,7 +160,7 @@ body {
 }
 .pos-col-right { display: flex; flex-direction: column; gap: 24px; }
 
-/* Header kartu: judul di kiri, badge di kanan */
+/*Header kartu: judul di kiri, badge di kanan*/
 .card-header-bar {
   display: flex;
   align-items: center;
@@ -186,7 +186,7 @@ body {
   border-radius: 999px;
 }
 
-/* ===== Form ===== */
+/*Form*/
 .form-group { margin-bottom: 16px; display: flex; flex-direction: column; }
 .form-label { font-size: 13px; font-weight: 600; margin-bottom: 6px; }
 
@@ -216,14 +216,14 @@ body {
 .form-input:hover { background: rgba(255, 255, 255, 0.95); border-color: #94a3b8; }
 .form-input:focus { background: #fff; border-color: var(--primary); box-shadow: 0 0 0 4px var(--primary-focus); }
 
-/* class "invalid" dipasang oleh JS */
+/*class "invalid" dipasang oleh JS*/
 .form-input.invalid {
   border-color: var(--danger);
   background: rgba(254, 242, 242, 0.9);
   box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.15);
 }
 
-/* class "error" diisi teks oleh JS; kosong = tidak tampil */
+/*class "error" diisi teks oleh JS; kosong = tidak tampil*/
 .error {
   display: none;
   font-size: 12.5px;
@@ -241,7 +241,7 @@ body {
 .hint { display: block; font-size: 12.5px; font-weight: 600; color: var(--discount); margin-top: 5px; }
 .hint:empty { display: none; }
 
-/* ===== Tombol ===== */
+/*Tombol*/
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
   height: 46px;
@@ -265,7 +265,7 @@ body {
 .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 8px 20px -2px rgba(37, 99, 235, 0.45); }
 .btn-primary:active { transform: translateY(1px); }
 
-/* Hapus: kecil dan beda dari tombol utama */
+/*Hapus: kecil dan beda dari tombol utama*/
 .btn.btn-hapus {
   height: auto;
   padding: 6px 12px;
@@ -277,7 +277,7 @@ body {
 }
 .btn.btn-hapus:hover { background: var(--danger); color: #fff; }
 
-/* Reset: netral, merah hanya saat di-hover supaya tidak kepencet */
+/*Reset: netral, merah hanya saat di-hover supaya tidak kepencet*/
 #btn-reset {
   height: 44px;
   color: var(--text-muted);
@@ -287,7 +287,7 @@ body {
 #btn-reset:hover { background: #fff; color: var(--danger); border-color: rgba(220, 38, 38, 0.4); }
 .btn-reset-wrap { display: flex; justify-content: flex-end; margin-top: 8px; }
 
-/* ===== Menu cepat ===== */
+/*Menu cepat*/
 .quick-preset-container { margin-top: 18px; padding-top: 16px; border-top: 1px dashed var(--glass-border-light); }
 .quick-preset-title {
   font-size: 11.5px; font-weight: 600;
@@ -309,7 +309,7 @@ body {
 }
 .preset-chip:hover { background: #fff; color: var(--primary); transform: translateY(-1px); }
 
-/* ===== Tabel ===== */
+/*Tabel*/
 .table-responsive-container {
   overflow-x: auto;
   border-radius: var(--radius-md);
@@ -338,12 +338,10 @@ body {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* class "angka" dipakai JS: rata kanan, font monospasi */
 .cart-table th.angka,
 .cart-table td.angka { text-align: right; }
 .cart-table td.angka { font-family: var(--font-mono); white-space: nowrap; }
 
-/* class "kosong" dipakai JS untuk keranjang kosong */
 .cart-table td.kosong {
   text-align: center;
   padding: 44px 20px;
@@ -355,7 +353,7 @@ body {
 .empty-title { font-size: 15px; font-weight: 600; color: var(--text-muted); }
 .empty-subtitle { font-size: 12.5px; color: var(--text-soft); max-width: 280px; }
 
-/* ===== Ringkasan ===== */
+/*Ringkasan*/
 .summary-row {
   display: flex; justify-content: space-between; align-items: center;
   font-size: 14px; color: var(--text-muted);
@@ -406,7 +404,6 @@ body {
   border-radius: var(--radius-md);
 }
 
-/* class "status", "ok", "kurang" diatur JS; kosong = disembunyikan */
 .status {
   padding: 12px 16px;
   font-size: 13.5px;
@@ -418,7 +415,7 @@ body {
 .status.ok { color: var(--success-dark); background: rgba(236, 253, 245, 0.9); border: 1.5px solid rgba(16, 185, 129, 0.4); }
 .status.kurang { color: var(--danger); background: rgba(254, 242, 242, 0.9); border: 1.5px solid rgba(220, 38, 38, 0.35); }
 
-/* ===== Responsif ===== */
+/*Responsif*/
 @media (max-width: 840px) {
   .pos-layout { grid-template-columns: 1fr; }
   .glass-card { padding: 18px; }
