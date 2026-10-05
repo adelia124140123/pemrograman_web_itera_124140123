@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan 3</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 860px; margin: 30px auto; padding: 0 16px; background: #f8fafc; }
+    h1 { font-size: 1.5rem; margin-bottom: 14px; }
+    .kotak { background: #fff; border: 1px solid #cbd5e1; border-radius: 8px; padding: 14px; margin-bottom: 14px; }
+    .kotak h2 { font-size: 1.05rem; margin-bottom: 10px; }
+    .form-baris { display: flex; flex-wrap: wrap; gap: 8px; }
+    input { padding: 8px; border: 1px solid #cbd5e1; border-radius: 6px; }
+    button { padding: 8px 14px; cursor: pointer; border: 1px solid #94a3b8; border-radius: 6px; background: #fff; }
+    button.utama { background: #1d4ed8; color: #fff; border-color: #1d4ed8; }
+    button.aktif { background: #dbeafe; border-color: #1d4ed8; }
+    button.bahaya { color: #b91c1c; border-color: #fca5a5; }
+    .error { color: #dc2626; font-size: 0.9rem; margin-top: 8px; min-height: 1.1em; }
+    .info { display: flex; flex-wrap: wrap; gap: 20px; font-size: 0.95rem; }
+    .info strong { color: #1d4ed8; }
+    .tombol-baris { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 9px 10px; border-bottom: 1px solid #e2e8f0; text-align: left; font-size: 0.92rem; }
+    th { background: #f1f5f9; }
+    td.angka { text-align: right; }
+    td.kosong { text-align: center; color: #64748b; padding: 24px; }
+    td.aksi button { margin-right: 4px; padding: 4px 10px; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <h1>Latihan 3 (124140123)</h1>
+
+  <!-- CREATE & UPDATE -->
+  <div class="kotak">
+    <h2 id="judul-form">Tambah Mahasiswa</h2>
+    <form id="form-mhs" novalidate>
+      <div class="form-baris">
+        <input type="text" id="in-nama" placeholder="Nama">
+        <input type="text" id="in-nim" placeholder="NIM">
+        <input type="text" id="in-jurusan" placeholder="Jurusan">
+        <input type="number" id="in-nilai" placeholder="Nilai (0-100)">
+        <button type="submit" id="btn-simpan" class="utama">Tambah</button>
+        <button type="button" id="btn-batal" hidden>Batal</button>
+      </div>
+      <div class="error" id="pesan-error"></div>
+    </form>
+  </div>
+
+  <!-- RINGKASAN -->
+  <div class="kotak">
+    <h2>Ringkasan</h2>
+    <div class="info">
+      <span>Jumlah: <strong id="info-jumlah">0</strong></span>
+      <span>Rata-rata: <strong id="info-rata">0</strong></span>
+      <span>Nilai tertinggi: <strong id="info-tertinggi">-</strong></span>
+    </div>
+  </div>
+
+  <!-- READ + SORT + FILTER -->
+  <div class="kotak">
+    <h2>Daftar Mahasiswa</h2>
+    <div class="tombol-baris">
+      <button type="button" id="btn-asc">Urut Nama A-Z</button>
+      <button type="button" id="btn-desc">Urut Nama Z-A</button>
+      <button type="button" id="btn-filter">Di Atas Rata-rata</button>
+      <button type="button" id="btn-tampil-semua">Tampilkan Semua</button>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>NIM</th>
+            <th>Jurusan</th>
+            <th>Nilai</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody id="tabel-mhs"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="latihan3.js"></script>
+</body>
+</html>

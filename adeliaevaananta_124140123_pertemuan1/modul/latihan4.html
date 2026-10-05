@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan 4</title>
+  <link rel="stylesheet" href="latihan4.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>Latihan 4 (124140123)</h1>
+    <button type="button" id="btn-tema" class="btn">🌙 Mode Gelap</button>
+  </header>
+
+  <main class="konten">
+
+    <!-- Soal 1 dan 2: form mahasiswa + localStorage -->
+    <section class="kotak">
+      <h2>Data Mahasiswa</h2>
+      <form id="form-mhs" autocomplete="off" novalidate>
+        <div class="grid-form">
+          <div class="field">
+            <label for="in-nama">Nama</label>
+            <input type="text" id="in-nama" placeholder="Contoh: Budi Santoso">
+            <small class="error" id="error-nama"></small>
+          </div>
+          <div class="field">
+            <label for="in-nim">NIM</label>
+            <input type="text" id="in-nim" placeholder="9 digit angka">
+            <small class="error" id="error-nim"></small>
+          </div>
+          <div class="field">
+            <label for="in-jurusan">Jurusan</label>
+            <input type="text" id="in-jurusan" placeholder="Contoh: Teknik Informatika">
+            <small class="error" id="error-jurusan"></small>
+          </div>
+          <div class="field">
+            <label for="in-nilai">Nilai (0-100)</label>
+            <input type="number" id="in-nilai" placeholder="0 - 100">
+            <small class="error" id="error-nilai"></small>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-utama">Tambah Mahasiswa</button>
+      </form>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>No</th><th>Nama</th><th>NIM</th><th>Jurusan</th><th>Nilai</th><th>Aksi</th></tr>
+          </thead>
+          <tbody id="tabel-mhs"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Data API + search + pagination -->
+    <section class="kotak">
+      <h2>Daftar Post dari API</h2>
+      <input type="search" id="in-cari" class="input-cari" placeholder="Cari berdasarkan title..." autocomplete="off">
+      <p class="status" id="status-post"></p>
+      <div id="daftar-post"></div>
+      <div class="pagination">
+        <button type="button" id="btn-prev" class="btn">Previous</button>
+        <span id="info-halaman">-</span>
+        <button type="button" id="btn-next" class="btn">Next</button>
+      </div>
+    </section>
+
+    <!-- Todo list -->
+    <section class="kotak">
+      <h2>Todo List</h2>
+      <form id="form-todo" autocomplete="off" novalidate>
+        <div class="baris-todo">
+          <input type="text" id="in-todo" placeholder="Tulis tugas baru...">
+          <button type="submit" class="btn btn-utama">Tambah</button>
+        </div>
+        <small class="error" id="error-todo"></small>
+      </form>
+      <p class="status" id="info-todo"></p>
+      <ul id="daftar-todo" class="daftar-todo"></ul>
+    </section>
+
+  </main>
+
+  <script src="latihan4.js"></script>
+</body>
+</html>
