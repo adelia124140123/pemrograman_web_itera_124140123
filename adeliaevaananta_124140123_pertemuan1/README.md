@@ -30,7 +30,7 @@ Aplikasi ini dibuat untuk menerapkan tiga kompetensi dasar JavaScript di browser
 Studi kasus yang dipilih adalah **kasir kantin kampus**. Alur kerjanya: kasir menginput barang yang dibeli, aplikasi menampilkannya di tabel keranjang, menghitung total dan diskon, lalu kasir memasukkan uang bayar untuk mengetahui kembalian. Setelah transaksi selesai, kasir menekan tombol Transaksi Baru untuk mengosongkan keranjang.
 
 ### Tampilan
-Antarmuka memakai gaya *glassmorphism*: kartu semi-transparan dengan efek blur di atas latar gradien lembut berwarna biru, teal, dan ungu muda. Rancangan awal tampilan dibuat dengan Google Stitch, kemudian disesuaikan dengan kebutuhan tugas.
+Antarmuka memakai gaya *glassmorphism*: kartu semi-transparan dengan efek blur di atas latar gradien lembut berwarna biru, teal, dan ungu muda.
 
 ### Teknologi
 - HTML5 (struktur halaman)
@@ -78,7 +78,7 @@ pemrograman_web_itera_124140123/
 2. Buka folder `adeliaevaananta_124140123_pertemuan1` di Visual Studio Code.
 3. Pasang ekstensi **Live Server** (oleh Ritwick Dey) melalui menu Extensions, jika belum terpasang.
 4. Klik kanan pada file `index.html`, lalu pilih **Open with Live Server**.
-5. Aplikasi akan terbuka otomatis di browser, biasanya pada alamat `http://127.0.0.1:5500/index.html`.
+5. Aplikasi akan terbuka otomatis di browser.
 
 **Alternatif tanpa Live Server:** klik dua kali file `index.html` agar terbuka langsung di browser.
 
