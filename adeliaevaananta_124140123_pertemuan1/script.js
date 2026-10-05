@@ -1,14 +1,14 @@
-// ===== Konstanta =====
+//Konstanta
 const STORAGE_KEY = "miniPosKeranjang";
 const MIN_HARGA = 500;
 const MIN_BELANJA_DISKON = 50000;
 const PERSEN_DISKON = 0.1;
 const KODE_PROMO = "HEMAT10";
 
-// ===== State =====
+//State
 let keranjang = [];
 
-// ===== Referensi elemen DOM =====
+//Referensi elemen DOM
 const formBarang = document.getElementById("form-barang");
 const inputNama = document.getElementById("nama");
 const inputHarga = document.getElementById("harga");
@@ -24,12 +24,12 @@ const elKembalian = document.getElementById("kembalian");
 const elStatusBayar = document.getElementById("status-bayar");
 const btnReset = document.getElementById("btn-reset");
 
-// ===== Utilitas =====
+//Utilitas
 function formatRupiah(angka) {
   return "Rp " + angka.toLocaleString("id-ID");
 }
 
-// ===== LocalStorage =====
+//LocalStorage
 function simpanKeranjang() {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(keranjang));
 }
@@ -48,7 +48,7 @@ function muatKeranjang() {
   }
 }
 
-// ===== Validasi =====
+//Validasi
 function tampilkanError(input, pesanEl, pesan) {
   pesanEl.textContent = pesan;
   input.classList.toggle("invalid", pesan !== "");
@@ -63,7 +63,7 @@ function validasiForm() {
   const harga = Number(hargaStr);
   const qty = Number(qtyStr);
 
-  // Nama
+  //Nama
   if (nama.length < 3) {
     tampilkanError(inputNama, document.getElementById("error-nama"),
       "Nama barang wajib diisi, minimal 3 karakter.");
@@ -72,7 +72,7 @@ function validasiForm() {
     tampilkanError(inputNama, document.getElementById("error-nama"), "");
   }
 
-  // Harga
+  //Harga
   if (hargaStr === "" || isNaN(harga) || harga < MIN_HARGA) {
     tampilkanError(inputHarga, document.getElementById("error-harga"),
       "Harga wajib angka dan minimal Rp 500.");
@@ -81,7 +81,7 @@ function validasiForm() {
     tampilkanError(inputHarga, document.getElementById("error-harga"), "");
   }
 
-  // Qty
+  //Qty
   if (qtyStr === "" || !Number.isInteger(qty) || qty < 1) {
     tampilkanError(inputQty, document.getElementById("error-qty"),
       "Jumlah wajib bilangan bulat minimal 1.");
@@ -93,7 +93,7 @@ function validasiForm() {
   return valid;
 }
 
-// ===== Keranjang =====
+//Keranjang
 function tambahBarang(event) {
   event.preventDefault();
   if (!validasiForm()) return;
@@ -130,7 +130,7 @@ function resetTransaksi() {
   render();
 }
 
-// ===== Render tabel =====
+//Render tabel
 function buatSel(teks, kelas) {
   const td = document.createElement("td");
   td.textContent = teks;
@@ -187,7 +187,7 @@ function renderTabel() {
   });
 }
 
-// ===== Kalkulator =====
+//Kalkulator
 function hitungTotalBelanja() {
   return keranjang.reduce(function (total, item) {
     return total + item.harga * item.qty;
@@ -258,13 +258,13 @@ function render() {
   renderRingkasan();
 }
 
-// ===== Event listener & inisialisasi =====
+//Event listener & inisialisasi
 formBarang.addEventListener("submit", tambahBarang);
 inputPromo.addEventListener("input", renderRingkasan);
 inputUangBayar.addEventListener("input", renderRingkasan);
 btnReset.addEventListener("click", resetTransaksi);
 
-// Menu favorit cepat: hanya mengisi form, tetap lewat validasi
+//Menu favorit cepat: hanya mengisi form, tetap lewat validasi
 document.querySelectorAll(".preset-chip").forEach(function (chip) {
   chip.addEventListener("click", function () {
     inputNama.value = chip.dataset.nama;
