@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan 5</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8">
+  <div class="max-w-3xl mx-auto">
+    <h1 class="text-2xl font-bold text-blue-600 mb-4">Latihan 5: Async Programming</h1>
+
+    <section class="bg-white p-4 rounded shadow mb-4">
+      <input id="searchInput" placeholder="Cari post (debounced)..." class="border rounded px-3 py-2 w-full mb-2">
+      <p id="loading" class="text-sm text-gray-500"></p>
+      <ul id="postList" class="list-disc pl-6 text-sm mb-2"></ul>
+      <button id="prevBtn" class="bg-gray-200 px-3 py-1 rounded">Prev</button>
+      <span id="pageInfo" class="mx-2 text-sm">Halaman 1</span>
+      <button id="nextBtn" class="bg-gray-200 px-3 py-1 rounded">Next</button>
+    </section>
+
+    <div id="output" class="space-y-4"></div>
+  </div>
+  <script src="latihan.js"></script>
+</body>
+</html>
