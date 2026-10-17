@@ -53,7 +53,7 @@ pemrograman_web_itera_124140123/
         │   ├── Edit.png
         │   ├── Belumselesai.png
         |   ├── Sudahselesai.png
-        │   └── localstorage.png
+        │   └── Localstorage.png
         ├── css/
         │   └── style.css
         └── js/
