@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugasku</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: { colors: { cream: '#fbf9f6', coral: '#ee7b69', 'coral-dark': '#9f3f32', muted: '#56423f' } } }
+    };
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-cream text-[#1b1c1a] min-h-screen">
+  <main class="mx-auto max-w-[720px] px-4 py-10">
+
+    <header class="mb-8">
+      <h1 class="text-3xl font-extrabold">Halo, Adel Semangat yaa Nugasnya! 👋</h1>
+      <p class="mt-1 flex items-center gap-1.5 text-muted">
+        <span class="material-symbols-outlined">calendar_today</span>
+        <span id="todayText"></span>
+      </p>
+      <p id="quote" class="mt-4 inline-block rounded-3xl bg-[#ffddb8]/40 px-4 py-2.5 text-sm italic text-[#855300]">
+        Memuat kutipan...
+      </p>
+    </header>
+
+    <nav class="mb-5 flex gap-2">
+      <button class="filter-btn active" data-filter="all">Semua</button>
+      <button class="filter-btn" data-filter="pending">Belum Selesai</button>
+      <button class="filter-btn" data-filter="completed">Selesai</button>
+    </nav>
+
+    <section id="taskList" class="flex flex-col gap-2"></section>
+
+    <div class="mt-6 flex justify-center">
+      <button id="addBtn" class="btn-primary flex items-center gap-2 text-base">
+        <span class="material-symbols-outlined">add</span>Tambah Tugas
+      </button>
+    </div>
+  </main>
+
+  <!-- Modal tambah / edit tugas -->
+  <div id="modal" class="fixed inset-0 z-40 hidden items-center justify-center bg-black/30 p-4">
+    <div class="w-full max-w-[440px] rounded-[2rem] bg-white p-7 shadow-2xl">
+      <div class="flex items-start justify-between">
+        <div>
+          <h2 id="modalTitle" class="text-[22px] font-bold">Tambah Tugas Baru</h2>
+          <p class="mt-0.5 text-[13px] text-muted">Catat tugas kuliahmu agar tidak terlewat 📝</p>
+        </div>
+        <button id="closeBtn" type="button" class="icon-btn" aria-label="Tutup">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+
+      <form id="taskForm" class="mt-5 flex flex-col gap-4">
+        <label class="label">Judul Tugas
+          <input name="title" class="field" placeholder="Contoh: Praktikum PAW" required>
+        </label>
+        <label class="label">Mata Kuliah
+          <input name="course" class="field" placeholder="Contoh: PAW" required>
+        </label>
+        <label class="label">Tenggat Waktu (Deadline)
+          <input name="deadline" type="date" class="field" required>
+        </label>
+        <div class="flex justify-end gap-3 pt-2">
+          <button id="cancelBtn" type="button" class="btn-soft">Batal</button>
+          <button type="submit" class="btn-primary">Simpan</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
