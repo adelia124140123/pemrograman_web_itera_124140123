@@ -48,10 +48,11 @@ pemrograman_web_itera_124140123/
         ├── index.html
         ├── README.md
         ├── screenshot/
-        │   ├── dashboard.png
-        │   ├── tambahtugas.png
-        │   ├── edit.png
-        │   ├── filter.png
+        │   ├── Dashboard.png
+        │   ├── Tambahtugas.png
+        │   ├── Edit.png
+        │   ├── Belumselesai.png
+        |   ├── Sudahselesai.png
         │   └── localstorage.png
         ├── css/
         │   └── style.css
@@ -128,7 +129,7 @@ Warna dihitung ulang setiap render melalui getter `urgency`, tidak disimpan di `
 ## 6. Tangkapan Layar (Screenshot)
 
 ### 6.1 Dashboard Utama
-Daftar tugas dengan kode warna deadline (merah, kuning, hijau, terlambat) dan kutipan harian di header.
+Tampilan awal dashboard jika tugas kosong dan kutipan harian di header.
 
 ![Dashboard Tugasku](Screenshoot/Dashboard.png)
 
@@ -151,7 +152,7 @@ Tampilan setelah tab filter **Belum Selesai** atau **Selesai** dipilih.
 ### 6.5 Penyimpanan di localStorage
 Bukti data tersimpan pada kunci `tugasku.tasks` (DevTools → Application → Local Storage).
 
-![localStorage](screenshot/localstorage.png)
+![localStorage](Screenshoot/Localstorage.png)
 
 ---
 
