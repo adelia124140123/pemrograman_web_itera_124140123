@@ -1,0 +1,51 @@
+body { font-family: "Nunito Sans", sans-serif; }
+.material-symbols-outlined { font-size: 18px; line-height: 1; }
+
+/* Tab filter */
+.filter-btn { background: #fff; color: #56423f; font-size: 12px; font-weight: 700; padding: 8px 20px; border-radius: 9999px; box-shadow: 0 1px 2px rgb(0 0 0 / .08); transition: .2s; }
+.filter-btn:hover { background: #efeeeb; }
+.filter-btn.active { background: #ee7b69; color: #fff; }
+
+/* Kartu tugas */
+.task-card { position: relative; display: flex; align-items: flex-start; gap: 14px; overflow: hidden; background: #fff; border-radius: 1rem; padding: 18px 18px 18px 24px; box-shadow: 0 1px 2px rgb(0 0 0 / .08); transition: box-shadow .2s; }
+.task-card:hover { box-shadow: 0 4px 12px rgb(0 0 0 / .1); }
+.task-card.is-done { opacity: .6; }
+.task-card.is-done .task-title { text-decoration: line-through; color: #56423f; }
+.task-body { flex: 1; min-width: 0; }
+.task-title { font-size: 16px; font-weight: 600; line-height: 24px; }
+.task-date { display: flex; align-items: center; gap: 6px; margin-top: 8px; font-size: 13px; color: #56423f; }
+
+/* Garis warna di kiri kartu (urgensi deadline) */
+.bar { position: absolute; left: 0; top: 0; bottom: 0; width: 6px; }
+.bar-red { background: #ba1a1a; }
+.bar-yellow { background: #da8b00; }
+.bar-green { background: #006c49; }
+.bar-late { background: #89726e; }
+.bar-done { background: #ddc0bb; }
+
+/* Badge */
+.pill { font-size: 11px; font-weight: 700; letter-spacing: .03em; padding: 2px 10px; border-radius: 9999px; background: #e4e2df; color: #56423f; }
+.badge-red { background: #ffdad6; color: #93000a; }
+.badge-yellow { background: #ffddb8; color: #2a1700; }
+.badge-green { background: #6ffbbe; color: #002113; }
+.badge-late { background: #30312f; color: #f2f0ed; }
+.badge-done { background: #e4e2df; color: #89726e; }
+
+/* Checkbox & tombol ikon */
+.check { display: flex; flex-shrink: 0; align-items: center; justify-content: center; width: 22px; height: 22px; margin-top: 2px; border: 2px solid #ddc0bb; border-radius: 9999px; background: #f5f3f0; color: transparent; transition: .2s; }
+.check .material-symbols-outlined { font-size: 15px; }
+.check.checked { background: #ee7b69; border-color: #ee7b69; color: #fff; }
+.icon-btn { display: flex; padding: 6px; border-radius: 9999px; color: #56423f; transition: .2s; }
+.icon-btn:hover { background: #efeeeb; color: #9f3f32; }
+
+/* Form & tombol */
+.label { display: flex; flex-direction: column; gap: 6px; font-size: 12px; font-weight: 700; }
+.field { width: 100%; padding: 12px 16px; border-radius: 1rem; background: #f5f3f0; font-size: 14px; font-weight: 500; outline: none; transition: .15s; }
+.field:focus { background: #fff; box-shadow: 0 0 0 2px #ee7b69; }
+.btn-primary { padding: 10px 28px; border-radius: 9999px; background: #ee7b69; color: #fff; font-weight: 700; box-shadow: 0 1px 3px rgb(0 0 0 / .15); transition: .2s; }
+.btn-primary:hover { background: #9f3f32; }
+.btn-soft { padding: 10px 24px; border-radius: 9999px; background: #efeeeb; color: #56423f; font-weight: 700; }
+.btn-soft:hover { background: #e4e2df; }
+
+.empty { padding: 48px 0; text-align: center; font-size: 18px; font-weight: 700; color: #56423f; }
+.empty span { display: block; font-size: 40px; }
