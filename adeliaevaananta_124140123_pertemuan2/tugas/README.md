@@ -135,17 +135,18 @@ Daftar tugas dengan kode warna deadline (merah, kuning, hijau, terlambat) dan ku
 ### 6.2 Menambahkan Tugas
 Form dengan tiga isian: judul, mata kuliah, dan deadline.
 
-![Modal Tambah Tugas](screenshot/modal.png)
+![Modal Tambah Tugas](Screenshoot/Tambahtugas.png)
 
 ### 6.3 Mengedit Tugas
 Form terisi otomatis dengan data tugas yang dipilih.
 
-![Modal Edit Tugas](screenshot/edit.png)
+![Modal Edit Tugas](Screenshoot/Edit.png)
 
 ### 6.4 Memfilter Daftar Tugas
 Tampilan setelah tab filter **Belum Selesai** atau **Selesai** dipilih.
 
-![Filter Tugas](screenshot/filter.png)
+![Filter Tugas](Screenshoot/Belumselesai.png)
+![Filter Tugas](Screenshoot/Sudahselesai.png)
 
 ### 6.5 Penyimpanan di localStorage
 Bukti data tersimpan pada kunci `tugasku.tasks` (DevTools → Application → Local Storage).
