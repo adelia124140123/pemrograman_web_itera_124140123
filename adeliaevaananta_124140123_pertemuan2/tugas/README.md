@@ -130,7 +130,7 @@ Warna dihitung ulang setiap render melalui getter `urgency`, tidak disimpan di `
 ### 6.1 Dashboard Utama
 Daftar tugas dengan kode warna deadline (merah, kuning, hijau, terlambat) dan kutipan harian di header.
 
-![Dashboard Tugasku](screenshot/dashboard.png)
+![Dashboard Tugasku](screenshot/Dashboard.png)
 
 ### 6.2 Menambahkan Tugas
 Form dengan tiga isian: judul, mata kuliah, dan deadline.
