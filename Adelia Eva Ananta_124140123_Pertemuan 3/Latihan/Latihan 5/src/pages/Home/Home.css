@@ -1,0 +1,23 @@
+.container {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.screen-badge {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: white;
+}
+
+.screen-badge.mobile {
+  background-color: #f59e0b;
+}
+
+.screen-badge.desktop {
+  background-color: #0284c7;
+}
