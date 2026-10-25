@@ -1,0 +1,7 @@
+.page-title { font-size: 1.6rem; margin-bottom: 1.25rem; }
+.home-layout { display: grid; gap: 1.5rem; grid-template-columns: 1fr; }
+.result-count { color: #64748b; font-size: 0.9rem; margin-bottom: 0.75rem; }
+
+@media (min-width: 768px) {
+  .home-layout { grid-template-columns: 320px 1fr; align-items: start; }
+}
