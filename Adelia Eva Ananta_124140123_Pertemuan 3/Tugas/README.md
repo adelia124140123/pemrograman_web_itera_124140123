@@ -48,6 +48,8 @@ tugas/
 ├── index.html
 ├── package.json
 ├── vite.config.js
+├── .gitignore
+├── .oxlintrc
 └── src/
     ├── main.jsx
     ├── App.jsx
