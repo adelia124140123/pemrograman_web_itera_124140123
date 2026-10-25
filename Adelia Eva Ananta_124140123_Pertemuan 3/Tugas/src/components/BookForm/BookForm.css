@@ -1,0 +1,17 @@
+.book-form {
+  background: white; padding: 1.25rem; border-radius: 8px;
+  border: 1px solid var(--border); height: fit-content;
+}
+.book-form h2 { font-size: 1.15rem; margin-bottom: 1rem; color: var(--primary-dark); }
+.form-group { margin-bottom: 1rem; }
+.form-group label { display: block; font-weight: 600; margin-bottom: 0.3rem; font-size: 0.9rem; }
+.form-group input, .form-group select {
+  width: 100%; padding: 0.6rem 0.75rem; font-size: 1rem;
+  border: 1px solid #cbd5e1; border-radius: 6px; background: white;
+}
+.form-group input:focus, .form-group select:focus {
+  outline: 2px solid var(--primary); border-color: transparent;
+}
+.input-error { border-color: var(--danger) !important; background: #fef2f2 !important; }
+.error-message { color: var(--danger); font-size: 0.85rem; margin-top: 0.3rem; }
+.form-actions { display: flex; gap: 0.5rem; }
