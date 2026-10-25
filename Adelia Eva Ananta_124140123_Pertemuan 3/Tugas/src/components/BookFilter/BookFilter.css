@@ -1,0 +1,12 @@
+.book-filter { margin-bottom: 1rem; }
+.search-input {
+  width: 100%; padding: 0.65rem 0.9rem; font-size: 1rem; margin-bottom: 0.7rem;
+  border: 1px solid #cbd5e1; border-radius: 6px;
+}
+.status-buttons { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.status-btn {
+  padding: 0.4rem 0.9rem; border: 1px solid #cbd5e1; background: white;
+  border-radius: 999px; cursor: pointer; font-size: 0.9rem;
+}
+.status-btn:hover { border-color: var(--primary); }
+.status-btn.active { background: var(--primary); color: white; border-color: var(--primary); }
