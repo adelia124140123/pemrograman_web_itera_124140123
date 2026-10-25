@@ -1,7 +1,17 @@
 # Aplikasi Manajemen Buku Pribadi
 
 Tugas Pertemuan 3 — Pemrograman Web, Institut Teknologi Sumatera
-Nama: Adelia Eva Ananta | NIM: 124140123
+
+ --- 
+Identitas
+
+| Keterangan | Isi |
+|---|---|
+| Nama Lengkap | Adelia Eva Ananta |
+| NIM | 124140123 |
+| Kelas Praktikum | RC |
+
+---
 
 ## 1. Deskripsi Aplikasi
 
