@@ -9,7 +9,7 @@ Identitas
 |---|---|
 | Nama Lengkap | Adelia Eva Ananta |
 | NIM | 124140123 |
-| Kelas Praktikum | RC |
+| Kelas Praktikum | RB |
 
 ---
 
