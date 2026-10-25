@@ -1,0 +1,26 @@
+:root {
+  --primary: #3b82f6;
+  --primary-dark: #2563eb;
+  --danger: #ef4444;
+  --bg: #f4f7f9;
+  --text: #1e293b;
+  --border: #e2e8f0;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg); color: var(--text); line-height: 1.6;
+}
+.container { max-width: 960px; margin: 0 auto; padding: 1.5rem 1rem; }
+
+.btn {
+  padding: 0.55rem 1.1rem; border: none; border-radius: 6px;
+  font-size: 0.95rem; font-weight: 600; cursor: pointer;
+}
+.btn-small { padding: 0.3rem 0.7rem; font-size: 0.85rem; }
+.btn-primary { background: var(--primary); color: white; }
+.btn-primary:hover { background: var(--primary-dark); }
+.btn-secondary { background: #e2e8f0; color: var(--text); }
+.btn-secondary:hover { background: #cbd5e1; }
+.btn-danger { background: var(--danger); color: white; }
+.btn-danger:hover { background: #dc2626; }
