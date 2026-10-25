@@ -1,0 +1,17 @@
+.stat-total {
+  display: flex; justify-content: space-between; align-items: center;
+  background: var(--primary); color: white; padding: 1.25rem 1.5rem;
+  border-radius: 8px; margin-bottom: 1rem; font-size: 1.1rem;
+}
+.stat-total strong { font-size: 2rem; }
+.stat-grid { display: grid; gap: 1rem; grid-template-columns: 1fr; }
+@media (min-width: 640px) { .stat-grid { grid-template-columns: repeat(3, 1fr); } }
+.stat-card { background: white; padding: 1.1rem; border: 1px solid var(--border); border-radius: 8px; }
+.stat-head { display: flex; justify-content: space-between; margin-bottom: 0.6rem; }
+.stat-head strong { font-size: 1.4rem; }
+.bar { height: 8px; background: #e2e8f0; border-radius: 999px; overflow: hidden; margin-bottom: 0.4rem; }
+.bar-fill { height: 100%; transition: width 0.3s ease; }
+.bar-milik { background: #22c55e; }
+.bar-baca { background: #3b82f6; }
+.bar-beli { background: #f59e0b; }
+.stat-card small { color: #64748b; }
