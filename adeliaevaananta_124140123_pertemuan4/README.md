@@ -71,7 +71,7 @@ adeliaevaananta_124140123_pertemuan4/
 
 **Screenshot hasil eksekusi:**
 
-(tempel screenshot di sini)
+![Hasil Soal 1](screenshots/Tugas1.png)
 
 ---
 
@@ -98,7 +98,7 @@ adeliaevaananta_124140123_pertemuan4/
 
 **Screenshot hasil eksekusi:**
 
-(tempel screenshot di sini)
+![Hasil Soal 2](screenshots/Tugas2.png)
 
 ---
 
@@ -124,7 +124,7 @@ Menerapkan **2 cara impor berbeda**:
 
 **Screenshot hasil eksekusi:**
 
-(tempel screenshot di sini)
+![Hasil Soal 3](screenshots/Tugas3.png)
 
 ---
 
@@ -133,22 +133,22 @@ Menerapkan **2 cara impor berbeda**:
 ## Praktikum
 | Folder | File | Materi |
 |---|---|---|
-| praktikum1 | `01_pengenalan.py` | Fungsi `print()`, parameter `sep` dan `end`, escape character |
-| praktikum2 | `02_variabel.py` | Tipe data, f-string, operasi string, type casting, `input()` |
-| praktikum3 | `03_kendali.py` | `if-elif-else`, ternary, `for`, `while`, `break`, `continue`, nested loop |
-| praktikum4 | `04_fungsi.py` | Default argument, multiple return, `*args`, `**kwargs`, lambda |
-| praktikum5 | `05_struktur_data.py` | List, tuple, dictionary, set, list comprehension |
-| praktikum6 | `kalkulator_lib.py`, `06_modul_app.py` | Modul kustom, standard library, `if __name__ == "__main__"` |
+| Praktikum1 | `Praktikum1.py` | Fungsi `print()`, parameter `sep` dan `end`, escape character |
+| Praktikum2 | `Praktikum2.py` | Tipe data, f-string, operasi string, type casting, `input()` |
+| Praktikum3 | `Praktikum3.py` | `if-elif-else`, ternary, `for`, `while`, `break`, `continue`, nested loop |
+| Praktikum4 | `Praktikum4.py` | Default argument, multiple return, `*args`, `**kwargs`, lambda |
+| Praktikum5 | `Praktikum5.py` | List, tuple, dictionary, set, list comprehension |
+| Praktikum6 | `kalkulatorLib.py`, `modulApp.py` | Modul kustom, standard library, `if __name__ == "__main__"` |
 
 ## Latihan Mandiri
 | Folder | File | Deskripsi |
 |---|---|---|
-| latihan1 | `latihan1.py` | Mencetak profil dengan `sep` dan kartu identitas berbingkai `#` memakai escape character |
-| latihan2 | `latihan2_suhu.py` | Konversi Celsius ke Fahrenheit dan Kelvin dari input pengguna |
-| latihan3 | `latihan3_tebak.py` | Game tebak angka dengan `while True` dan `break` |
-| latihan4 | `latihan4_validasi.py` | Fungsi validasi password (minimal 8 karakter dan mengandung angka) |
-| latihan5 | `latihan5_kontak.py` | Katalog kontak berbasis dictionary (tambah, cari dengan `.get()`, tampilkan) |
-| latihan6 | `password_gen.py`, `main.py` | Modul generator password acak dengan `random` dan `string` |
+| Latihan1 | `Latihan1.py` | Mencetak profil dengan `sep` dan kartu identitas berbingkai `#` memakai escape character |
+| Latihan2 | `Latihan2.py` | Konversi Celsius ke Fahrenheit dan Kelvin dari input pengguna |
+| Latihan3 | `Latihan3.py` | Game tebak angka dengan `while True` dan `break` |
+| Latihan4 | `Latihan4.py` | Fungsi validasi password (minimal 8 karakter dan mengandung angka) |
+| Latihan5 | `Latihan5.py` | Katalog kontak berbasis dictionary (tambah, cari dengan `.get()`, tampilkan) |
+| Latihan6 | `passwordGen.py`, `main.py` | Modul generator password acak dengan `random` dan `string` |
 
 ---
 
@@ -158,9 +158,3 @@ Menerapkan **2 cara impor berbeda**:
 - **`.get()` pada dictionary** lebih aman daripada `dict[key]` karena tidak memicu `KeyError`.
 - **`input()` selalu menghasilkan string**, sehingga harus dikonversi dengan `int()` atau `float()` sebelum dihitung.
 - **Indentasi** menentukan blok kode di Python (standar PEP 8: 4 spasi).
-
-## Konvensi Kode
-- Penamaan variabel dan fungsi memakai `snake_case`.
-- Indentasi 4 spasi secara konsisten.
-- Setiap fungsi di bagian tugas diberi docstring.
-- Folder `venv/` dan `__pycache__/` tidak diunggah (terdaftar di `.gitignore`).
