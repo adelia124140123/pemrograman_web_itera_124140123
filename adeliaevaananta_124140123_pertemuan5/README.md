@@ -138,11 +138,11 @@ Jika `python` tidak dikenali, gunakan `py` sebagai gantinya (Windows).
 
 Penambahan item, katalog tersedia, dan pencarian:
 
-![Hasil Tugas bagian 1-3](screenshots/Outputmain(1).png)
+![Hasil Tugas](screenshot/Outputmain(1).png)
 
 Peminjaman, denda, pengembalian, dan pembuktian encapsulation:
 
-![Hasil Tugas bagian 4-7](screenshots/Outputmain(2).png)
+![Hasil Tugas](screenshot/Outputmain(2).png)
 
 ---
 
