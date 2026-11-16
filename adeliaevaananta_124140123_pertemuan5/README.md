@@ -136,11 +136,11 @@ Jika `python` tidak dikenali, gunakan `py` sebagai gantinya (Windows).
 
 **Screenshot hasil eksekusi:**
 
-Penambahan item, katalog tersedia, dan pencarian:
+Penambahan item, katalog tersedia, pencarian, dan peminjaman:
 
 ![Hasil Tugas](screenshot/Outputmain(1).png)
 
-Peminjaman, denda, pengembalian, dan pembuktian encapsulation:
+Denda, pengembalian, dan pembuktian encapsulation:
 
 ![Hasil Tugas](screenshot/Outputmain(2).png)
 
